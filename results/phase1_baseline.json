@@ -1,0 +1,11 @@
+{
+  "qubits": 3,
+  "shots": 20000,
+  "cz_depolarizing_error_probability": 0.03,
+  "observable": "Z on middle qubit",
+  "ideal_expectation": -0.4293,
+  "noisy_expectation": -0.4028,
+  "absolute_change": 0.026500000000000024,
+  "ideal_runtime_seconds": 0.06520929999987857,
+  "noisy_runtime_seconds": 0.05918839999958436
+}

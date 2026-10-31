@@ -1,0 +1,6 @@
+qiskit==2.6.1
+qiskit-aer==0.18.2
+qiskit-addon-pna==0.2.0
+qiskit-addon-slc==0.2.0
+qiskit-ibm-runtime==0.51.0
+matplotlib>=3.10,<4

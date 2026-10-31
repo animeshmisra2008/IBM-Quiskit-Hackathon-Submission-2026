@@ -1,0 +1,16 @@
+{
+  "method": "Qiskit Shaded Lightcones (SLC)",
+  "calibration_source": "synthetic local rates; not measured by NoiseLearnerV3",
+  "circuit_qubits": 5,
+  "cz_gates": 8,
+  "observable": "X on the center qubit",
+  "noise_layers": 2,
+  "candidate_pauli_error_terms": 156,
+  "retained_terms_after_shading": 64,
+  "full_mitigation_sampling_cost": 2.5983495456741608,
+  "full_mitigation_bias_bound": 0.0,
+  "slc_sampling_cost": 1.8969992084992193,
+  "slc_bias_bound": 0.04698646037925702,
+  "sampling_cost_reduction_fraction": 0.2699214731684497,
+  "analysis_runtime_seconds": 2.1075707999998485
+}
