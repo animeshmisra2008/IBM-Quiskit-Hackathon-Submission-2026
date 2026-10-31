@@ -16,32 +16,30 @@ py -m venv .venv
 .\run_all.ps1
 ```
 
+## Priority guide
+
+1. **Final deliverables:** presentation/Tracks 1 and 2 combined.pptx and submission/Track 2 submission bundle.zip.
+2. **Reproduce the Track 2 work:** 
+un_all.ps1, src/, 
+equirements.txt, and the saved outputs in 
+esults/.
+3. **Read and present:** docs/ contains the assignment brief, experiment log, speaker guide, and likely questions. Slide previews are in presentation/previews/.
+4. **Supporting Track 1 materials:** supporting/track1_exploration/ groups the earlier Track 1 scripts, figures, and source presentation. supporting/presentation_versions/ contains the Track 2-only reference deck. These are background materials; use the combined deck for the final presentation.
+
 ## File guide
 
-### Run and code
-
-- `run_all.ps1` — runs the three Python scripts below in order.
-- `src/phase1_baseline.py` — compares an ideal and noisy three-qubit circuit.
-- `src/phase2_slc.py` — demonstrates SLC error-term selection on the five-qubit circuit.
-- `src/phase3_pna.py` — main workflow: runs the five-qubit SLC + PNA noise sweep.
-- `requirements.txt` — Python packages needed to run the code.
-
-### Results and presentation
-
-- `results/phase1_baseline.json` — baseline output.
-- `results/phase2_slc.json` — standalone SLC output.
-- `results/phase3_noise_sweep.json` — main sweep, fidelity estimates, and timing data.
-- `presentation/Tracks 1 and 2 combined.pptx` — Track 1 and Track 2 content in the Track 2 visual style.
-- `presentation/previews/` — PNG preview of each slide.
-- `submission/Track 2 submission bundle.zip` — ready-to-share code, results, notes, brief, and deck.
-
-### Background and build tools
-
-- `docs/assignment_brief.pdf` — original assignment.
-- `docs/project_log.md` — experiment notes, results, and requirement check.
-- `docs/speaker_guide.md` — plain-language talk track.
-- `docs/likely_questions.md` — short answers for presentation questions.
-- `package_submission.py` — rebuilds the submission ZIP from the listed project files.
+- README.md — this setup and navigation guide.
+- 
+un_all.ps1 — reproduces the baseline, SLC analysis, and SLC + PNA noise sweep.
+- src/phase1_baseline.py — ideal versus noisy three-qubit baseline.
+- src/phase2_slc.py — SLC error-term selection on the five-qubit circuit.
+- src/phase3_pna.py — five-qubit SLC + PNA noise sweep.
+- 
+esults/ — saved JSON results from each phase.
+- presentation/Tracks 1 and 2 combined.pptx — final combined presentation, in the Track 2 visual style.
+- submission/Track 2 submission bundle.zip — ready-to-share code, results, notes, brief, and final deck.
+- docs/ — assignment brief, project log, speaker guide, and likely questions.
+- package_submission.py — rebuilds the submission ZIP.
 
 ## What the results report
 
