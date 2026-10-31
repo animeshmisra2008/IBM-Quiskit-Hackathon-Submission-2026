@@ -16,7 +16,7 @@ files = [
     root / "results" / "phase3_noise_sweep.json",
     root / "docs" / "speaker_guide.md",
     root / "docs" / "likely_questions.md",
-    root / "presentation" / "Tracks 1 and 2 combined.pptx",
+    root / "presentation" / "Tracks 1 and 2 combined - code walkthrough.pptx",
 ]
 missing = [str(path) for path in files if not path.is_file()]
 if missing:
@@ -25,5 +25,5 @@ if missing:
 archive = root / "submission" / "Track 2 submission bundle.zip"
 with ZipFile(archive, "w", compression=ZIP_DEFLATED) as bundle:
     for path in files:
-        bundle.write(path, path.relative_to(root))
+        bundle.write(path, "presentation/Tracks 1 and 2 combined.pptx" if path.name == "Tracks 1 and 2 combined - code walkthrough.pptx" else path.relative_to(root))
 print(f"Created {archive} with {len(files)} files")
